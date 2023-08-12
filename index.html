@@ -8,10 +8,7 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="main-content">
-        
-    </div>
-
+    
     <div class="addBook">
 
         <form class="addBookForm">
@@ -19,9 +16,26 @@
             <input type="text" name="bookName" class="inputBookName" required>
             <label for="bookAuthor" class="">Author:</label>
             <input type="text" name="bookAuthor" class="inputBookAuthor" required>
+            <label for="readStatus" class="">Status:</label>
+            <select name="readStatus" id="">
+                <option value="read">Read</option>
+                <option value="notRead">Not read</option>
+            </select>
+            
             <button type="submit">Submit</button>
         </form>
         
     </div>
+
+    <div class="tableHeaders">
+        <div>Name</div>
+        <div>Author</div>
+        <div>Status</div>
+    </div>
+    <div class="main-content">
+        
+    </div>
+
+    
 </body>
 </html>
